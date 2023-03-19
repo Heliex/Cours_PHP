@@ -1,6 +1,6 @@
 # Cours PHP
 
-Ce dépôt contient le matériel et les exemples de code pour le cours PHP que j'écris. PHP est un langage de script côté serveur populaire, spécialement conçu pour le développement Web. Ce cours vise à enseigner les bases du langage PHP et à aider les développeurs à créer des applications Web dynamiques et interactives.
+Ce dépôt contient le matériel et les exemples de code pour le cours PHP que j'écris. PHP est un langage de script côté serveur populaire, spécialement conçu pour le développement Web. Ce cours vise à enseigner les bases du langage PHP et à aider les développeurs à créer des applications Web dynamiques et interactives. 
 
 ## Contenu du cours
 

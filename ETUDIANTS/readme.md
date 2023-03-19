@@ -19,7 +19,7 @@ php path/to/the/script.php
 git add monfichier.php
 ```
 ```bash
-git commit -m "Message de commit"
+git commit -m "Message de commit" 
 ```
 
 ```bash

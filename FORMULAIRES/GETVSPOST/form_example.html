@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'exemple</title>
+</head>
+<body>
+<h1>Formulaire d'exemple</h1>
+
+<h2>Méthode GET</h2>
+<form action="get_process.php" method="GET">
+    <label for="nameget">Nom :</label>
+    <input type="text" name="name" id="nameget" required>
+    <br>
+    <label for="emailget">E-mail :</label>
+    <input type="email" name="email" id="emailget" required>
+    <br>
+    <button type="submit">Envoyer</button>
+</form>
+
+<h2>Méthode POST</h2>
+<form action="post_process.php" method="POST">
+    <label for="namepost">Nom :</label>
+    <input type="text" name="name" id="namepost" required>
+    <br>
+    <label for="emailpost">E-mail :</label>
+    <input type="email" name="email" id="emailpost" required>
+    <br>
+    <button type="submit">Envoyer</button>
+</form>
+</body>
+</html>

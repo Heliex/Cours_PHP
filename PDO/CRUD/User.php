@@ -9,7 +9,7 @@ class User
         $this->db = $db;
     }
 
-    public function createUser($first_name, $last_name, $email): bool
+    public function createUser(string $first_name, string $last_name, string $email): bool
     {
         $sql = "INSERT INTO users (first_name, last_name, email) VALUES (:first_name, :last_name, :email)";
         $stmt = $this->db->prepare($sql);
@@ -26,7 +26,7 @@ class User
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function updateUser($id, $first_name, $last_name, $email): bool
+    public function updateUser(int $id, string $first_name, string $last_name, string $email): bool
     {
         $sql = "UPDATE users SET first_name = :first_name, last_name = :last_name, email = :email WHERE id = :id";
         $stmt = $this->db->prepare($sql);
@@ -37,7 +37,7 @@ class User
         return $stmt->execute();
     }
 
-    public function deleteUser($id): bool
+    public function deleteUser(int $id): bool
     {
         $sql = "DELETE FROM users WHERE id = :id";
         $stmt = $this->db->prepare($sql);
@@ -45,7 +45,7 @@ class User
         return $stmt->execute();
     }
 
-    public function checkCredentials($email)
+    public function checkCredentials(string $email)
     {
         $sql = "SELECT * FROM users WHERE email = :email";
         $stmt = $this->db->prepare($sql);
@@ -54,7 +54,7 @@ class User
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function getUserById($id)
+    public function getUserById(int $id)
     {
         $stmt = $this->db->prepare("SELECT * FROM users WHERE id = :id");
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);

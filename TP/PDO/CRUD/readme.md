@@ -77,7 +77,7 @@ $stmt = $db->prepare($sql);
 $stmt->bindValue(':id', $user_id);
 $stmt->execute();
 ```
-### Exercices pratiques
+## Exercices pratiques
    
 Maintenant que vous avez appris à insérer, récupérer, mettre à jour et supprimer des données en utilisant PHP et PDO, voici quelques exercices pratiques pour consolider vos connaissances, y compris la gestion des sessions et des cookies :
 
@@ -90,7 +90,8 @@ Maintenant que vous avez appris à insérer, récupérer, mettre à jour et supp
 7) Créez un formulaire de connexion et vérifiez les informations d'identification de l'utilisateur en utilisant la classe User. Si les informations d'identification sont correctes, stockez les informations de l'utilisateur dans la session et redirigez l'utilisateur vers la liste des utilisateurs. 
 8) Ajoutez un bouton "Se déconnecter" qui détruira la session et redirigera l'utilisateur vers la page de connexion. 
 9) Utilisez des cookies pour stocker certaines préférences de l'utilisateur, comme le choix de la langue ou le nombre d'utilisateurs à afficher par page.
-10) (Optionnel) Implémentez la pagination pour afficher un nombre limité d'utilisateurs par page, en utilisant les préférences stockées dans les cookies.
+10) (Optionnel) Ajouter la notion de mot de passe dans la classe `User` et la logique associée dans les fichiers PHP.
+11) (Optionnel) Implémentez la pagination pour afficher un nombre limité d'utilisateurs par page, en utilisant les préférences stockées dans les cookies.
 
 En suivant ces étapes et en complétant les exercices pratiques, vous aurez une meilleure compréhension de la manière d'interagir avec une base de données MySQL en utilisant PHP et PDO, ainsi que de gérer les sessions et les cookies. 
 

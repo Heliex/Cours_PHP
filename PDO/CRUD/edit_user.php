@@ -7,6 +7,9 @@ if (!isset($_SESSION['user'])) {
 }
 
 require_once 'User.php';
+require_once 'Database.php';
+
+$db = Database::connect();
 
 $user = new User($db);
 

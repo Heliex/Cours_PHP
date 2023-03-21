@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des utilisateurs</title>
+</head>
+<body>
+<h1>Liste des utilisateurs</h1>
+
+<p>Bonjour, <strong>Jean Dupont</strong> !</p>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Prénom</th>
+        <th>Nom</th>
+        <th>Email</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Jean</td>
+        <td>Dupont</td>
+        <td>jean.dupont@example.com</td>
+        <td>
+            <a href="../edit_user.php?id=1">Modifier</a>
+            <a href="delete_user.php?id=1">Supprimer</a>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Marc</td>
+        <td>Durand</td>
+        <td>marc.durand@example.com</td>
+        <td>
+            <a href="../edit_user.php?id=2">Modifier</a>
+            <a href="delete_user.php?id=2">Supprimer</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<a href="add_user.php">Ajouter un utilisateur</a>
+<br>
+<a href="../login.php?logout=1">Se déconnecter</a>
+</body>
+</html>

@@ -1,5 +1,7 @@
 <?php
 
+require_once 'config.php';
+
 class Database {
     public static function connect() {
         try {

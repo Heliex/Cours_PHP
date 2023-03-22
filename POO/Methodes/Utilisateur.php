@@ -5,7 +5,7 @@ class Utilisateur {
     public string $nom;
     public string $prenom;
     public string $email;
-    public string $mot_de_passe;
+    public string $motDePasse;
 
     public function register(): void {
         // Code pour s'inscrire

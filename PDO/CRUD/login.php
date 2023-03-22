@@ -3,9 +3,15 @@ session_start();
 require_once 'User.php';
 require_once 'Database.php';
 
+if(isset($_SESSION['user'])) {
+    header('Location: index.php');
+}
+
 $db = Database::connect();
 
 $user = new User($db);
+
+
 
 if (isset($_POST['login'])) {
     $email = $_POST['email'];

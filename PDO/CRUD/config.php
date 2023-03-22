@@ -1,6 +1,6 @@
 <?php
 // Configuration de la connexion à la base de données
-$DB_HOST = "localhost";
-$DB_USER = "username";
-$DB_PASSWORD = "password";
-$DB_NAME = "myapp";
+const DB_HOST = "localhost";
+const DB_USER = "username";
+const DB_PASSWORD = "password";
+const DB_NAME = "myapp";
